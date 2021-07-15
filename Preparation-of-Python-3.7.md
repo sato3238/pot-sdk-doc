@@ -108,7 +108,7 @@ C:\>
 > * `(py37)` prefix will be disappeared at prompt and got back to `C:\>`.
 
 
-## Prepare Python 3.7 on Linux (Ubuntu 18.04 Desktop)
+## Prepare Python 3.7 on Linux (Ubuntu Desktop)
 
 `Python 3.x interpreter` may exist on most linux system. Because `STU` and `PAM` contains python `3.7` interpreter we need python version `3.7`.
 
@@ -125,23 +125,25 @@ It’s always a good idea to start off any installation process by updating syst
 toor@ubuntu:~$ sudo apt update -y
 ```
 
-> * User name is `toor`
+> * User name is `toor` as example environment.
+> * If your system Ubuntu 20.04 Desktop you need to symbolic link for `/usr/bin/python`. This is because pyenv only look for system python and [pyenv bug](https://github.com/pyenv/pyenv/issues/1613) ramains.
+
+> ```sh
+> toor@ubuntu:~$ sudo apt install python-is-python3
+> ```
+
 
 Once that has finished up, run the following command to install all of pyenv’s dependencies:
 
 ```sh
-toor@ubuntu:~$ sudo apt install -y make build-essential libssl-dev zlib1g-dev \
-libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
-libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
+toor@ubuntu:~$ sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl git python3-pip
 ```
 
 ### Clone the Repository
 To install the latest version of pyenv and provide a straightforward method for updating it, run the following command to pull it down from GitHub:
 
 ```sh
-toor@ubuntu:~$ curl -L \
-https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer \
-| bash
+toor@ubuntu:~$ curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
 ```
 
 ### Configure the Environment
@@ -150,7 +152,9 @@ Next, to properly configure pyenv for use on the system, run the following block
 ```sh
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
-echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n eval "$(pyenv init -)"\n eval "$(pyenv virtualenv-init -)"\nfi' >> ~/.bashrc
+echo 'eval "$(pyenv init -)' >> ~/.bashrc
+echo 'eval "$(pyenv init --path)' >> ~/.bashrc
+echo 'eval "$(pyenv virtualenv-init -)' >> ~/.bashrc
 ```
 
 Finally, to start using pyenv, restart the shell by running:
@@ -236,6 +240,8 @@ There are many ways to install python 3.x on macOS however we recommend [pyenv](
 All commands are run at `terminal`.
 
 > * `zsh` is the default shell from `Catalyna` to `Big Sur` of macOS. So we explain with zsh terminal environment.
+> * Previous versions of macOS support `bash` and bash is almost same as Linux system.
+> * Let's assume this mac's termial prompt is `toor@mac: ~|⇒`
 
 ### Prerequsite environment
 
@@ -288,6 +294,27 @@ You can install pyenv with `brew` command.
 
 ```sh
 toor@mac: ~|⇒ brew install pyenv pyenv-virtualenv
+```
+
+### Configure the Environment
+Next, to properly configure pyenv for use on the system, run the following block of commands to set some important environment variables and setup pyenv autocompletion:
+
+```sh
+echo 'eval "$(pyenv init -)' >> ~/.zshrc
+export PATH=$HOME/.pyenv/shims:$PATH
+echo 'eval "$(pyenv virtualenv-init -)' >> ~/.zshrc
+```
+
+Finally, to start using pyenv, restart the shell by running:
+
+```sh
+toor@mac: ~|⇒  source ~/.zshrc
+```
+
+Now make sure `pyenv` command works well at terminal.
+
+
+```sh
 toor@mac: ~|⇒ pyenv
 pyenv 2.0.3
 Usage: pyenv <command> [<args>]
@@ -323,6 +350,7 @@ Some useful pyenv commands are:
    whence      List all Python versions that contain the given executable
    which       Display the full path to an executable
 ```
+
 
 ### Verify the Installation
 To verify that pyenv is installed correctly, we will try installing a new version of Python. First, we will list the available versions of Python:
@@ -381,10 +409,10 @@ You need to activate `py37` in order to use the environment.
 ```sh
 toor@mac: ~|⇒ pyenv activate py37
 pyenv-virtualenv: prompt changing will be removed from future release. configure `export PYENV_VIRTUALENV_DISABLE_PROMPT=1' to simulate the behavior.
-(py37) toor@mac: ~|⇒
+toor@mac: ~|⇒
 ```
-> * `(py37)` will be added at the front of `toor@mac: ~|⇒` prompt.
-> * Some recent pyenv activation does not have `(py37)` prefix at prompt.
+> * `(py37)` may not be added at the front of `toor@mac: ~|⇒` prompt.
+> * Some old version of pyenv activation have `(py37)` prefix at prompt.
 
 You can verify which virtualenv is activated.
 
@@ -401,6 +429,12 @@ toor@mac: ~|⇒ pyenv versions
 You need to deactivate `py37` in order to exit the environment.
 
 ```sh
-(py37) toor@mac: ~|⇒ pyenv deactivate
-toor@mac: ~|⇒
+toor@mac: ~|⇒ pyenv deactivate
+toor@mac: ~|⇒ pyenv versions
+  system
+* 3.7.11 (set by /Users/mcchae/.pyenv/version)
+  3.7.11/envs/py37
+  py37
 ```
+
+The `*` indicator says that default python is set to original global python.
