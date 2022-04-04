@@ -70,13 +70,13 @@ class TU(TestCase):
             with open(of) as ifp:
                 rs = ifp.read()
                 print(rs)
-            self.assertTrue(rs == r''' _   _      _ _                            _     _ ___ 
+            self.assertTrue(rs.strip() == r''' _   _      _ _                            _     _ ___ 
 | | | | ___| | | ___   __      _____  _ __| | __| |__ \
 | |_| |/ _ \ | |/ _ \  \ \ /\ / / _ \| '__| |/ _` | / /
 |  _  |  __/ | | (_) |  \ V  V / (_) | |  | | (_| ||_| 
 |_| |_|\___|_|_|\___/    \_/\_/ \___/|_|  |_|\__,_|(_) 
                                                        
-''')
+'''.strip())
         except Exception as e:
             sys.stderr.write('\n%s\n' % str(e))
             self.assertTrue(False)
@@ -95,13 +95,13 @@ class TU(TestCase):
             with open(of) as ifp:
                 rs = ifp.read()
                 print(rs)
-            self.assertTrue(rs == r'''    __  __     ____                             __    _____ 
+            self.assertTrue(rs.strip() == r'''    __  __     ____                             __    _____ 
    / / / /__  / / /___     _      ______  _____/ /___/ /__ \
   / /_/ / _ \/ / / __ \   | | /| / / __ \/ ___/ / __  / / _/
  / __  /  __/ / / /_/ /   | |/ |/ / /_/ / /  / / /_/ / /_/  
 /_/ /_/\___/_/_/\____/    |__/|__/\____/_/  /_/\__,_/ (_)   
                                                             
-''')
+'''.strip())
         except Exception as e:
             sys.stderr.write('\n%s\n' % str(e))
             self.assertTrue(False)
@@ -121,13 +121,13 @@ class TU(TestCase):
             with open(of) as ifp:
                 rs = ifp.read()
                 print(rs)
-            self.assertTrue(rs == r'''                       ___      ____                            ____     __  __
+            self.assertTrue(rs.strip() == r'''                       ___      ____                            ____     __  __
                       /__ \____/ / /________ _      __   ____  / / /__  / / / /
                        / _/ __  / / ___/ __ \ | /| / /  / __ \/ / / _ \/ /_/ / 
                       /_// /_/ / / /  / /_/ / |/ |/ /  / /_/ / / /  __/ __  /  
                      (_) \__,_/_/_/   \____/|__/|__/   \____/_/_/\___/_/ /_/   
                                                                                
-''')
+'''.strip())
         except Exception as e:
             sys.stderr.write('\n%s\n' % str(e))
             self.assertTrue(False)
@@ -147,7 +147,7 @@ class TU(TestCase):
             with open(of) as ifp:
                 rs = ifp.read()
                 print(rs)
-            self.assertTrue(rs == r'''    __  __     ____    
+            self.assertTrue(rs.strip() == r'''    __  __     ____    
    / / / /__  / / /___ 
   / /_/ / _ \/ / / __ \
  / __  /  __/ / / /_/ /
@@ -159,7 +159,7 @@ class TU(TestCase):
 | |/ |/ / /_/ / /  / / /_/ / /_/  
 |__/|__/\____/_/  /_/\__,_/ (_)   
                                   
-''')
+'''.strip())
         except Exception as e:
             sys.stderr.write('\n%s\n' % str(e))
             self.assertTrue(False)

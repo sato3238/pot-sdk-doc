@@ -30,9 +30,8 @@ setup:
   - Windows
   - Linux
   package_data:
-    argoslabs.myplugin.asciiart: ['icon.*',]
+    argoslabs.myplugin.asciiart: ['icon.*', 'README*.*']
   url: https://www.argos-labs.com
-  # do not start '0'
   version: 3.202.3300
 ```
 
@@ -48,6 +47,22 @@ Each iterms explained as follows:
 * `platforms` - Supporting OS platforms
 * `package_data`
   * Please make sure the package name is the plugin's package name, in this example `argoslabs.myplugin.asciiart`
-  * Next list is the additional files which included at `wheel` module file. You have to add `icon.png` file for the icon of `STU` operation.
+  * Next list is the additional files which included at `wheel` module file. You have to add `icon.png` file for the icon of `STU` operation, and `README*.*` files for help contents
 * `version` - plugin's version
+
+> **Note** - There are three parts in the template for Python package name to change `argoslabs.demo.helloworld` to your's `argoslabs.myplugin.asciiart` in this example.
+> * At the file `plugin-template\argoslabs\myplugin\asciiart\setup.yaml`:
+>   > `argoslabs.demo.helloworld: ['icon.*', 'README*.*']`
+>   > Change from above line to next line
+>   > `argoslabs.myplugin.asciiart: ['icon.*', 'README*.*']`
+> * At the file `plugin-template\argoslabs\myplugin\asciiart\main.py`:
+>   > `from argoslabs.demo.helloworld import main`
+>   > Change from above line to next line
+>   > `from argoslabs.myplugin.asciiart import main`
+> * At the file `plugin-template\argoslabs\myplugin\asciiart\tests\test_me.py`:
+>   > `from argoslabs.demo.helloworld import _main as main`
+>   > Change from above line to next line
+>   > `from argoslabs.myplugin.asciiart import _main as main`
+> 
+> *Sometimes import statements can be changed automatically by refectoring functionality at main.py or test_me.py but sometimes not. So before building all be sure to checking above three references.*
 

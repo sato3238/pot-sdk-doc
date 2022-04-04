@@ -1,5 +1,8 @@
-# Install dependent module
+# Sample code and dependent module
 
+***The most important part of coding plugin is making a good functional sample code.***
+
+## Starting point ascii art example
 To begin with there is an old fashioned [ascii art](https://en.wikipedia.org/wiki/ASCII_art) at `terminal` or `CMD.EXE`. We will show this example as a new plugin.
 
 ![figlet.org](Captures/03-Make_Plugin_PyCharm/04-dependent-modules/figlet-org.png)
@@ -9,10 +12,14 @@ And you can find esaily `python figlet` module at google or pypi.
 
 ![pyfiglet](Captures/03-Make_Plugin_PyCharm/04-dependent-modules/pyfiglet.png)
 
+## Need to install dependent module
+
 You can install `pyfiglet` using pip:
 ``` sh
 pip install pyfiglet
 ```
+
+## Making a fully functional sample code
 
 The first and most important thing to build plugin is making a good python running code.
 
@@ -37,6 +44,7 @@ python pyfiglet_test.py
 \__/\___/_/|_|\__/   \__/\____/  /_/   \___/_/ /_/\__,_/\___/_/
 ```
 
+## requirements.txt at PyCharm
 Let's go back to our `PyCharm` environment.
 
 ![01-requirements](Captures/03-Make_Plugin_PyCharm/04-dependent-modules/01-requirements.png)
@@ -69,6 +77,8 @@ For example,
 # For Windows win32 dependent job : Windows ONLY!!!
 pywin32; sys_platform == 'win32'
 ```
+
+## Install requirements.txt at PyCharm
 
 ![02-open-terminal](Captures/03-Make_Plugin_PyCharm/04-dependent-modules/02-open-terminal.png)
 

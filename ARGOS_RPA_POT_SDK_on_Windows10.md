@@ -25,8 +25,6 @@ ARGOS POT SDK consists of three parts as follows:
 
 You can install one of Python [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)
 * `PyCharm` Community Edition
-* `Visual Studio Code` and Python extension
-> We shows `PyCharm` capture examples in this document.
 
 ## How to build a ARGOS Low-Code Python Plugin
 
@@ -47,7 +45,7 @@ Next Guide shows how to code from the scafolding template.
 
 You need to change python package name from `argoslabs.demo.helloworld` to `argoslabs.myplugin.asciiart` for example.
 
-### [Install dependent module](Install_Dependent_modules_Windows10.md)
+### [Sample code and dependent module](Install_Dependent_modules_Windows10.md)
 
 When you make your own plugin you need to install third party dependent modules from [pypi.org](https://pypi.org). This guild shows how to do for this topic.
 
@@ -63,19 +61,19 @@ This guild show you how to test plugin with unittest and check to have unique na
 ### [Tags and Version](Setup_yaml.md)
 Before building plugin you have to set tags and version for that plugin.
 
-### [Usage help with README.md]()
+### [Usage help with README.md](Usage_Help_with_README.md)
 Each plugin must have a usage help so that shows this contents at STU link. This guide shows how to make this help contents.
 
 ## Build plugin
 
 Now that everything is ready for build. Let's build.
 
-### [Preparing private repository]()
+### [Preparing private repository](Preparing_Private_Repository_Windows10.md)
 
-After build a plugin you need to upload this plugin to your own Python private repository. This guide shows how to install private repository and configuration at Supervisor.
+After building a plugin you need to upload this plugin to your own Python private repository. This guide shows how to install private repository and configuration at Supervisor.
 
-### [Build icon and plugin]()
-Although normal python CLI program do not need 
+### [Build icon and plugin](build_icon_plugin_Windows10.md)
+You have to prepare an image and make an icon using `alabs.icon` utility and then you can build this plugin with `build.bat` batch file.
 
 ## After making plugin
 
