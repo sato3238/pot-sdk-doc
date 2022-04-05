@@ -79,9 +79,9 @@ You have to prepare an image and make an icon using `alabs.icon` utility and the
 
 Once you build your own plugin it's time to make a bot at `STU` for testing. And you may need to upgrade the plugin if needed.
 
-### [Test a bot at STU]()
+### [Make a testing bot at STU](Make_testing_bot_STU.md)
 
 Now your plugin is registered at private repository so you can make use of this plugin. This guide shows how to make a bot using your plugin.
 
-### [How to upgrade plugin]()
+### [How to upgrade plugin](How_to_Upgrade_plugin.md)
 Because plugin is a normal software it need to fix or upgrade if needed. This guide shows how to upgrade your plugin.

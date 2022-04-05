@@ -338,7 +338,7 @@ You can register your private repository at [supervisor's private plugin menu](h
 If you click `+` icon on the top right side then `Add Private Plugin` dialog shows up. You can set thess informations:
 
 * `Name` - Any unique name for private plugins, we are using `local-repository`
-* `URL` - For the protocol `http://` and rest address will be `localhost:6543`
+* `URL` - For the protocol `http://` and rest address will be `127.0.0.1:6543/simple/` (same meaning with `localhost:6543/simple/`)
 * `User` - User id for private repository
 * `Password` - User password for private repository
 * `Enabled` - Must be checked to use this private repository
