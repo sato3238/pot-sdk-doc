@@ -23,7 +23,7 @@ plugin-template
          +-- ...
 ```
 
-![01-rename-second-level](Captures/03-Make_Plugin_PyCharm/03-naming/01-rename-second-level.png)
+![01-rename-second-level](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/03-naming/01-rename-second-level.png)
 
 Firstly you can rename the `demo` group name with your own.
 You can do as follows:
@@ -31,20 +31,20 @@ You can do as follows:
 > * Click the right button
 > * Select `Refactor > Rename` or press `Shift + F6`
 
-![02-rename-demo](Captures/03-Make_Plugin_PyCharm/03-naming/02-rename-demo.png)
+![02-rename-demo](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/03-naming/02-rename-demo.png)
 
 You enter `myplugin` as example. 
 > You can set proper group name as you wish like company name.
 
-![03-rename-third](Captures/03-Make_Plugin_PyCharm/03-naming/03-rename-third.png)
+![03-rename-third](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/03-naming/03-rename-third.png)
 
 Now it's time to rename `helloworld` plugin name.
 
-![04-rename-hello.png](Captures/03-Make_Plugin_PyCharm/03-naming/04-rename-hello.png)
+![04-rename-hello.png](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/03-naming/04-rename-hello.png)
 
 Let's change into `asciiart`.
 
-![05-check-changed](Captures/03-Make_Plugin_PyCharm/03-naming/05-check-changed.png)
+![05-check-changed](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/03-naming/05-check-changed.png)
 
 You can see `argoslabs/myplugin/asciiart` folder structure at Project pane.
 

@@ -1,6 +1,6 @@
 # Tags and Version
 
-![01-setup-yaml](Captures/03-Make_Plugin_PyCharm/07-setup_yaml/01-setup-yaml.png)
+![01-setup-yaml](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/07-setup_yaml/01-setup-yaml.png)
 
 You can find `setup.yaml` file at `asciiart` folder in which main code `__init__.py` exists.
 

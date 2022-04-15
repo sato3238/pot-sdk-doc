@@ -6,13 +6,13 @@ There is no python interpreter on Windows so we need to install Python Interpret
 
 ## Install Python 3.7.3
 
-![01-google-search](Captures/01-Install_Python_3.7/01-google-search.png)
+![01-google-search](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/01-Install_Python_3.7/01-google-search.png)
 First search at google with `python 3.7.3 download for windows`.
 
-![02-Python3.7.3-Page](Captures/01-Install_Python_3.7/02-Python3.7.3-Page.png)
+![02-Python3.7.3-Page](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/01-Install_Python_3.7/02-Python3.7.3-Page.png)
 Python 3.7.3 page shows.
 
-![03-download-executable-x86-installable](Captures/01-Install_Python_3.7/03-download-executable-x86-installable.png)
+![03-download-executable-x86-installable](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/01-Install_Python_3.7/03-download-executable-x86-installable.png)
 You can download `Windows x86 executable installer`
 > * There are installer files for `x86-64` and `x86`.  `x86-64` is for 64-bit Windows OS and `x86` is for 32-bit Windows OS. 
 > * Windows PAM embed Python 3.7.3 32-bit interpreter and using it so choose `x86` installer.
@@ -20,24 +20,24 @@ You can download `Windows x86 executable installer`
 
 And the let's run the downloaded installer.
 
-![04-install-python](Captures/01-Install_Python_3.7/04-install-python.png)
+![04-install-python](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/01-Install_Python_3.7/04-install-python.png)
 
 Let's run `Customized installation` at the starting setup window.
 > * You can use `Install Now` with default options, but for the convenience of following examples.
 
-![05-optional-features](Captures/01-Install_Python_3.7/05-optional-features.png)
+![05-optional-features](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/01-Install_Python_3.7/05-optional-features.png)
 > * It's necessary to set `pip` option to use pip for installing other Python packages.
 
-![06-cusmise-install-location](Captures/01-Install_Python_3.7/06-cusmise-install-location.png)
+![06-cusmise-install-location](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/01-Install_Python_3.7/06-cusmise-install-location.png)
 
 > * We recommand the `Customize install location` with the `C:\Python37-32` location.
 > * This is for using absolute `python.exe` path like `C:\Python37-32\python.exe` without setting PATH.
 
-![07-setup-succussful](Captures/01-Install_Python_3.7/07-setup-succussful.png)
+![07-setup-succussful](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/01-Install_Python_3.7/07-setup-succussful.png)
 
 Finally successfully installed of `Python 3.7.3`.
 
-![08-python-version-check](Captures/01-Install_Python_3.7/08-python-version-check.png)
+![08-python-version-check](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/01-Install_Python_3.7/08-python-version-check.png)
 
 We can check the Python version at `CMD.EXE`.
 
@@ -55,7 +55,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 Python [Virtual Environment](https://docs.python.org/3.7/library/venv.html) is the lightweight “virtual environments” with their own site directories, optionally isolated from system site directories. Each virtual environment has its own Python binary (which matches the version of the binary that was used to create this environment) and can have its own independent set of installed Python packages in its site directories.
 
-![09-building-venv](Captures/01-Install_Python_3.7/09-building-venv.png)
+![09-building-venv](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/01-Install_Python_3.7/09-building-venv.png)
 
 ``` sh
 C:\>mkdir work

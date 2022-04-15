@@ -73,6 +73,6 @@ Building process is the same with the command `build.bat`.
 
 If you have reproduced failure bot case you have to test that bot is working well after upgrade.
 
-![01-plugin-version-STU](Captures/03-Make_Plugin_PyCharm/11-upgrade-plugin/01-plugin-version-STU.png)
+![01-plugin-version-STU](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/11-upgrade-plugin/01-plugin-version-STU.png)
 
 Once you update your plugin you can see the versions at STU like above image. You can upgrade target version and `test run` the bot.

@@ -5,12 +5,12 @@
 ## Starting point ascii art example
 To begin with there is an old fashioned [ascii art](https://en.wikipedia.org/wiki/ASCII_art) at `terminal` or `CMD.EXE`. We will show this example as a new plugin.
 
-![figlet.org](Captures/03-Make_Plugin_PyCharm/04-dependent-modules/figlet-org.png)
+![figlet.org](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/04-dependent-modules/figlet-org.png)
 
 [Figlet](http://www.figlet.org) is an imprementation to build **BIG** ascii art characters from normal text. 
 And you can find esaily `python figlet` module at google or pypi.
 
-![pyfiglet](Captures/03-Make_Plugin_PyCharm/04-dependent-modules/pyfiglet.png)
+![pyfiglet](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/04-dependent-modules/pyfiglet.png)
 
 ## Need to install dependent module
 
@@ -47,7 +47,7 @@ python pyfiglet_test.py
 ## requirements.txt at PyCharm
 Let's go back to our `PyCharm` environment.
 
-![01-requirements](Captures/03-Make_Plugin_PyCharm/04-dependent-modules/01-requirements.png)
+![01-requirements](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/04-dependent-modules/01-requirements.png)
 
 You can find a file named `requirements.txt` at the `asciiart` folder. This folder is a sub folder from `argoslabs` and `myplugin`. This requirements.txt is the normal python and get some hints form this artical, [How to install Python packages with pip and requirements.txt](https://note.nkmk.me/en/python-pip-install-requirements/).
 
@@ -80,14 +80,14 @@ pywin32; sys_platform == 'win32'
 
 ## Install requirements.txt at PyCharm
 
-![02-open-terminal](Captures/03-Make_Plugin_PyCharm/04-dependent-modules/02-open-terminal.png)
+![02-open-terminal](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/04-dependent-modules/02-open-terminal.png)
 
 After you modified `requirements.txt` you need to install that module for this python environment. 
 To install this requirements open the terminal from the context menu, `Open In > Terminal`.
 
 > Please make sure you have set the `Python Interpreter` at Project menu at settings in `PyCharm`.
 
-![03-pip-install](Captures/03-Make_Plugin_PyCharm/04-dependent-modules/03-pip-install.png)
+![03-pip-install](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/04-dependent-modules/03-pip-install.png)
 
 At `PyCharm`'s terminal you can run this command:
 

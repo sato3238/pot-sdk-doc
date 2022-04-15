@@ -314,15 +314,15 @@ INFO 2022-03-20 19:00:44,625 [waitress] Serving on http://0.0.0.0:6543
 
 ## Web Interface
 
-![01-pypiserver](Captures/03-Make_Plugin_PyCharm/08-pypicloud/01-pypiserver.png)
+![01-pypiserver](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/08-pypicloud/01-pypiserver.png)
 
 You can see above result at web browser with the address [http://localhost:6543](http://localhost:6543).
 
-![02-pypiserver-login](Captures/03-Make_Plugin_PyCharm/08-pypicloud/02-pypiserver-login.png)
+![02-pypiserver-login](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/08-pypicloud/02-pypiserver-login.png)
 
 You can login with the `user id` and `password` which are created at Configuration.
 
-![03-pypiserver-admin](Captures/03-Make_Plugin_PyCharm/08-pypicloud/03-pypiserver-admin.png)
+![03-pypiserver-admin](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/08-pypicloud/03-pypiserver-admin.png)
 
 At `Admin` top menu you can manage Users and Groups.
 Once logined with `admin` user you can easily upload or delete module.
@@ -333,7 +333,7 @@ Once logined with `admin` user you can easily upload or delete module.
 
 You can register your private repository at [supervisor's private plugin menu](https://rpa.argos-labs.com/#/plugin/private-plugin).
 
-![04-supervisor-add-private-plugin](Captures/03-Make_Plugin_PyCharm/08-pypicloud/04-supervisor-add-private-plugin.png)
+![04-supervisor-add-private-plugin](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/08-pypicloud/04-supervisor-add-private-plugin.png)
 
 If you click `+` icon on the top right side then `Add Private Plugin` dialog shows up. You can set thess informations:
 
@@ -345,7 +345,7 @@ If you click `+` icon on the top right side then `Add Private Plugin` dialog sho
 
 Click the `Save` button.
 
-![05-supervisor-first-private-plugin](Captures/03-Make_Plugin_PyCharm/08-pypicloud/05-supervisor-first-private-plugin.png)
+![05-supervisor-first-private-plugin](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/08-pypicloud/05-supervisor-first-private-plugin.png)
 
 > If you already have one or more private repositories then re-order to first position. This is because when plugin is being built it tries to upload to the ***FIRST private repository***.
 

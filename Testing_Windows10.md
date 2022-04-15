@@ -223,20 +223,20 @@ This return code is the same as plugin's return code.
 > Add a new test case for the new functionality. When testing all cases we can test including original test case. We can call this is [Regression testing](https://en.wikipedia.org/wiki/Regression_testing).
 
 ## Debugging of testing
-![02-debug-unittest](Captures/03-Make_Plugin_PyCharm/06-testing/02-debug-unittest.png)
+![02-debug-unittest](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/06-testing/02-debug-unittest.png)
 
 Two kinds of testing is possible:
 * Outside of `TestCase` we can debug whole test cases like above example image.
 * When the corsor is in one of the test function and right click and select `Debug` then you can debug only that function.
 
-![03-check-all-passed](Captures/03-Make_Plugin_PyCharm/06-testing/03-check-all-passed.png)
+![03-check-all-passed](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/06-testing/03-check-all-passed.png)
 
 When you test all cases you can see the process of passed or not at the left bottom side on `PyCharm` like above capture image.
 
 > You have to make sure every test case is passed. If not plugin build also failed.
 
 ## Checking uniqueness of name
-![04-check-unique-name](Captures/03-Make_Plugin_PyCharm/06-testing/04-check-unique-name.png)
+![04-check-unique-name](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/06-testing/04-check-unique-name.png)
 
 You can open `Terminal` from the context menu, `Open with > Terminal` on right click of folder `asciiart`.
 And run this command,
@@ -249,5 +249,7 @@ Package "argoslabs.myplugin.asciiart" and Display name "ASCII Art" seems OK to u
 * `(py37)` prompt means that you are in `py37` virtual environment.
 * If there is an error message for this package name or display name please change it and check again until no error found.
 
-> New version of `PyCharm` changed from `CMD.EXE` into `PowerShell`. So there may be no `(py37)` virtual environment prompt.
+> * This `alabs.ppm plugin unique` command may takes long more than 5 minutes because getting all modules from [official repository](https://pypi-official.argos-labs.com)
+> * Note that this uniqueness is checking only with `official repository` not `private repositories`. **Your responsibility to check the uniqueness**.
+> * New version of `PyCharm` changed from `CMD.EXE` into `PowerShell`. So there may be no `(py37)` virtual environment prompt.
 

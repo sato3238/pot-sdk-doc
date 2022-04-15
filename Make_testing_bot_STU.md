@@ -5,11 +5,11 @@ Now your plugin is registered at private repository so you can make use of this 
 To make a testing bot with the plugin which you created you need to install `STU` and `PAM` and register at `Supervisor`. 
 
 
-![01-login-STU](Captures/03-Make_Plugin_PyCharm/10-make_bot/01-login-STU.png)
+![01-login-STU](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/10-make_bot/01-login-STU.png)
 
 If you start `STU` then above `login` page shows up. Please enter **your** `Supervisor` account to sign in.
 
-![02-private-plugin](Captures/03-Make_Plugin_PyCharm/10-make_bot/02-private-plugin.png)
+![02-private-plugin](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/10-make_bot/02-private-plugin.png)
 
 Just after signing in `STU` it starts detecting plugins from [official repository](https://pypi-official.argos-labs.com) and private repositories registered at [supervisor's private plugin menu](https://rpa.argos-labs.com/#/plugin/private-plugin). If it's first time to run the `STU` then it may take more than a few minutes. And afterwards this checking time will be reduced to a few seconds because of cache. 
 
@@ -22,7 +22,7 @@ You can find your plugin `ASCII Art` at the last of `Operations`, `Plugins-priva
 >   * Same or grater version exists at `official repository` then no `(P)` prefix exists
 >   * Greater version exists at `private repository` then `(P)` prefix exists
 
-![03-asciiart-properties](Captures/03-Make_Plugin_PyCharm/10-make_bot/03-asciiart-properties.png)
+![03-asciiart-properties](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/10-make_bot/03-asciiart-properties.png)
 
 If you drag and drop your `(P)ASCII Art` plugin at `Operations` to `Timeline then you can see above image at your `STU`. There is a Properties pane at the right side. Let's set next things:
 * `Message`: Any message is OK, above example is `Hi ASCII?`
@@ -31,7 +31,7 @@ If you drag and drop your `(P)ASCII Art` plugin at `Operations` to `Timeline the
   * `VariableName`: `{{my.a}}`
 
 
-![04-run-notepad](Captures/03-Make_Plugin_PyCharm/10-make_bot/04-run-notepad.png)
+![04-run-notepad](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/10-make_bot/04-run-notepad.png)
 
 We will add two more operations to get the result of `(P)ASCII Art` plugin. 
 Firstly search `run` at the right to `Operation` and the drag and drotp the `Run Program` operation.
@@ -40,7 +40,7 @@ And then at `Properties` pane:
 
 This means run empty `notepad` application.
 
-![05-text-input](Captures/03-Make_Plugin_PyCharm/10-make_bot/05-text-input.png)
+![05-text-input](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/10-make_bot/05-text-input.png)
 
 Secondly search `input` at the right to `Operation` and the drag and drotp the `Text Input` operation.
 And then at `Properties` pane:
@@ -48,12 +48,12 @@ And then at `Properties` pane:
 * `Paste Icon`: checked
 * At drop down box: select `{{my.a}}`
 
-![06-testrun](Captures/03-Make_Plugin_PyCharm/10-make_bot/06-testrun.png)
+![06-testrun](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/10-make_bot/06-testrun.png)
 
 Now that is all to make a testing bot.
 To run this bot, `Test run` from `Run` menu or press `F5`.
 
-![07-result](Captures/03-Make_Plugin_PyCharm/10-make_bot/07-result.png)
+![07-result](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/10-make_bot/07-result.png)
 
 At the first time to run this `bot` it takes a few more seconds to build `Virtual Environment` for this bot. 
 
