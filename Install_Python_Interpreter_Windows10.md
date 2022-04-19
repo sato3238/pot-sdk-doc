@@ -2,7 +2,7 @@
 
 There is no python interpreter on Windows so we need to install it.
 
-> We strongly recommend Python Version 3.7.3. This is because PAM's embedding python has that version.
+> We support Python Version 3.7.3. 
 
 ## Install Python 3.7.3
 
