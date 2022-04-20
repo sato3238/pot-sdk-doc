@@ -100,4 +100,4 @@ C:\work>
 ```
 
 Whenever you want a new Virtual Environment you can create and use it.
-If you do not want that Virtual Environment just delete the folder you created. In case the above example, it is  `C:\work\py37`.
+If you do not want that Virtual Environment just delete the folder you created. In case of the example above, it is  `C:\work\py37`.
