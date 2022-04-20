@@ -1,24 +1,26 @@
 # Python Interpreter on Windows 10
 
-There is no python interpreter on Windows so we need to install it.
+Windows does not include Python interpreter. You need to install it separetely.
 
-> We support Python Version 3.7.3. 
+> [Click here if you want to know why we only support Python Version 3.7.3](https://wiki.argos-labs.com/display/RPARELNOTE/POT+SDK+supports+Python+3+7+but+it+is+out+dated "click to learn why")
 
 ## Install Python 3.7.3
 
 ![01-google-search](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/01-Install_Python_3.7/01-google-search.png)
-First search at google with `python 3.7.3 download for windows`.
+Let's Google with `python 3.7.3 download for windows`.
 
 ![02-Python3.7.3-Page](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/01-Install_Python_3.7/02-Python3.7.3-Page.png)
-Python 3.7.3 page shows.
+Python 3.7.3 page will be located
 
 ![03-download-executable-x86-installable](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/01-Install_Python_3.7/03-download-executable-x86-installable.png)
 You can download `Windows x86 executable installer`
+**Important - please select 32bit version**
+
 > * There are installer files for `x86-64` and `x86`.  `x86-64` is for 64-bit Windows OS and `x86` is for 32-bit Windows OS. 
 > * Windows PAM embed Python 3.7.3 32-bit interpreter and using it so choose `x86` installer.
 > * 32-bit python can also run at 64-bit Windows OS.
 
-And the let's run the downloaded installer.
+And the let's run the downloaded installer. **Make sure to select 32bit version**
 
 ![04-install-python](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/01-Install_Python_3.7/04-install-python.png)
 
@@ -98,4 +100,4 @@ C:\work>
 ```
 
 Whenever you want a new Virtual Environment you can create and use it.
-If you do not want that Virtual Environment just delete created folder in case above example `C:\work\py37`.
+If you do not want that Virtual Environment just delete the folder you created. In case the above example, it is  `C:\work\py37`.
