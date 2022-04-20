@@ -51,7 +51,7 @@ You can `Create New Project`, but for simple example `Open` folder.
 
 ![10-open-c-work](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/02-install_PyCharm/10-open-c-work.png)
 
-We already created a Virtual Environment at `C:\work\py37` and install `POT SDK`. We can use open `C:\work`.
+You have already created a Virtual Environment at `C:\work\py37` and have installed `POT SDK`. We can just open `C:\work`.
 
 > You can change the working folder instead of `C:\work` however change the folder path in this example.
 
