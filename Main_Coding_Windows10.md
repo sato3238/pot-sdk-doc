@@ -1,10 +1,10 @@
-# Main Coding at `__init__.py`
+# Coding the main Python program in `__init__.py`
 
-Plugin's main code exists at the source, `argoslabs/myplugin/asciiart/__init__.py`.
+The plugin's main code exists at the Python source code file called `argoslabs/myplugin/asciiart/__init__.py`.
 
-## Main python code
+## The main Python code
 
-Here is the full source:
+Here is the full source code:
 
 ```python
 """
@@ -152,7 +152,7 @@ Every plugin has the function named `main` and `_main`. At the `_main` you can f
         description='''AscII Art using Figlet''',
     ) as mcxt:
 ```
-This `ModuleContext` define plugin's main attributes as follows:
+This `ModuleContext` defines plugin's main attributes as follows:
 * `owner` : You can describe who madke this plugin. `ARGOS-LABS` means our own plugin.
 * `group` : This group is for grouping at STU Operation group. The value will be explained below.
 * `version` : This version is reserved. Currently not used. Actual version is defined at `setup.yaml` file.
@@ -166,7 +166,7 @@ This `ModuleContext` define plugin's main attributes as follows:
 * `description` : This attribute is the description of this plugin.
 
 > * This `ModuleContext` class is defined at `alabs.common` library.
-> * This `ModuleContext` class is enherited from `ArgumentParser` from [argparse](https://docs.python.org/3.7/library/argparse.html) Python Standard Library. This is because our plugin idea started from that [CLI](https://en.wikipedia.org/wiki/Command-line_interface) parameters can be regarded as corresponding user input interface. Let us explain more detail at `input design`.
+> * This `ModuleContext` class is enherited from `ArgumentParser` from [argparse](https://docs.python.org/3.7/library/argparse.html) Python Standard Library. This is because our plugin has been designed with the fundamentals of [CLI](https://en.wikipedia.org/wiki/Command-line_interface) parameters can be regarded as corresponding user input interface. Let us explain more detail at `input design`.
 
 Next table is for the value of `group`:
 Value | Category
@@ -183,16 +183,17 @@ Value | Category
 10 | Web Scraping
 Other Values | Misc
 
-> Any suggestions are welcome if you cannot find proper category.
+> Tney are the categories in STU's toolbox. We welcome any suggestions if you do not find a proper category.
 
 ![STU-Operation-Groups](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/05-coding/STU-Operation-Groups.png)
+
 You can see grouped plugin category at STU.
 
-## Input design with parameters
+## Input design for the plugin parameters
 
 ![02-Input-Design](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/05-coding/02-Input-Design.png)
 
-Next is for `Input design` python code:
+Below shows the `Input design` Python code:
 ```python
         # ##################################### for app dependent parameters
         mcxt.add_argument('font',
@@ -223,7 +224,7 @@ Next is for `Input design` python code:
         argspec = mcxt.parse_args(args)
 ```
 
-Our plugin idea started from that [CLI](https://en.wikipedia.org/wiki/Command-line_interface) parameters can be regarded as corresponding user input interface. Every command has the following structure. Refer [Arguments](https://en.wikipedia.org/wiki/Command-line_interface#Arguments).
+Again our plugin follows the fundamentals of [CLI](https://en.wikipedia.org/wiki/Command-line_interface) parameters can be regarded as corresponding user input interface. Every command has the following structure. Refer [Arguments](https://en.wikipedia.org/wiki/Command-line_interface#Arguments).
 
 Command | Optional Parameters | Positional Parameters | Descriptions
 :---:|---|---|---
@@ -251,7 +252,7 @@ Command | Optional Parameters | Positional Parameters | Descriptions
 * [metavar](https://docs.python.org/3.7/library/argparse.html#metavar) - A name for the argument in usage messages.
 * [dest](https://docs.python.org/3.7/library/argparse.html#dest) - The name of the attribute to be added to the object returned by parse_args().
 
-Additionally next arguments are added at ***ModuleContext.add_argument***():
+Additionally, next arguments are added at ***ModuleContext.add_argument***():
 
 * `display_name` - String display label at STU's property. If omitted this value is same as above `name or flags`
 * `show_default` - Usually optional parameter, starts with `-` is in the `Advanced` property and hidden. Even optional parameter if this flag is set `True` then shows above `Advanced` section.
@@ -318,7 +319,7 @@ These parameters are pre-defined for special functionality or `PAM`:
 * `--verbose` or `-v` - Verbose logging (-v, -vv, -vvv ... more detail log)
 * `--dumpspec` - Dump arguments spec as json or yaml format
 
-> * Do not re-define at plugin
+> * **Do not re-define them at your plugin**
 
 ## Actual working function with return codes
 
@@ -382,7 +383,7 @@ The most common thing with `mcxt` is to logging error, info, and so on. `mcxt.lo
 
 ![03-Exception-Handling](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/05-coding/03-Exception-Handling.png)
 
-You can find multiple return with different code as follows:
+You can define multiple return code with different execution outcomes as follows:
 
 ```python
     try:
@@ -398,11 +399,11 @@ You can find multiple return with different code as follows:
 
 This scheme is same as normal [exception handling in Python](https://docs.python.org/3.7/tutorial/errors.html).
 
-There is one simple rule between `PAM` and `plugin`.
+**There is one simple rule between `PAM` and `plugin`**.
 * return `0` in case success
 * Otherwise return non zeon
 
-> We recommend for the broadest exception, `except Exception as err` return `99`
+> We recommend for the broadest exception, `except Exception as err` return `99` - BUT we know nobody really follows our rules (or even reads this);-)
 
 ![04-STU-FailureCodeAction](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/05-coding/04-STU-FailureCodeAction.png)
 
@@ -442,6 +443,6 @@ for row in rows:
 ```
 
 ## Conclusion
-If you are familar with python [CLI](https://en.wikipedia.org/wiki/Command-line_interface) program with [argparse](https://docs.python.org/3.7/library/argparse.html) this plugin is really same.
+If you are familar with Python [CLI](https://en.wikipedia.org/wiki/Command-line_interface) program with [argparse](https://docs.python.org/3.7/library/argparse.html) this plugin is really same.
 
 > Moreover you can run our plugin as a normal python CLI command.
