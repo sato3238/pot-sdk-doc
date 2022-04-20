@@ -1,10 +1,10 @@
-# Testing
+# Testing and validating your file and plugin names for uniqueness
 
-Plugin's test code exists at the source, `argoslabs/myplugin/asciiart/tests/test_me.py`.
-There are good ways to test with several testing framework.
+Plugin's test code exists at the source code file named `argoslabs/myplugin/asciiart/tests/test_me.py`.
+There are good ways to test with several testing frameworks.
 We are using [unittest](https://docs.python.org/3.7/library/unittest.html).
 
-Next code is full version of `test_me.py`.
+Below shows the full version of `test_me.py`.
 
 ```python
 """
@@ -183,7 +183,7 @@ We are using [uniitest](https://docs.python.org/3.7/library/unittest.html), [Tes
 from argoslabs.myplugin.asciiart import _main as main
 ```
 
-You have to refer _main function of proper python package like `argoslabs.myplugin.asciiart`.
+You must refer to _main function of proper Python package like `argoslabs.myplugin.asciiart`.
 
 ### Test case method
 
@@ -219,23 +219,23 @@ This return code is the same as plugin's return code.
 * `--outfile` is the saved file from plugin `STDOUT` output. This result is the passed to `PAM` so in this test you can test in this function working well or not
 * The most common advantage in this testcase is that we can use `IDE`'s debugging method.
 
-> When we add some new function or modify original plugin code this test case is really important.
-> Add a new test case for the new functionality. When testing all cases we can test including original test case. We can call this is [Regression testing](https://en.wikipedia.org/wiki/Regression_testing).
+> When you update (fix bugs, add new function, or modify original code) plugin's code this test case is extremely important.
+> Naturally, you add a new test case for the new functionality. However, testing for all of the previous test cases must be performed for every update. We call this [Regression testing](https://en.wikipedia.org/wiki/Regression_testing).
 
 ## Debugging of testing
 ![02-debug-unittest](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/06-testing/02-debug-unittest.png)
 
 Two kinds of testing is possible:
 * Outside of `TestCase` we can debug whole test cases like above example image.
-* When the corsor is in one of the test function and right click and select `Debug` then you can debug only that function.
+* When the cursor is in one of the test function and right click and select `Debug` then you can debug only that function.
 
 ![03-check-all-passed](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/06-testing/03-check-all-passed.png)
 
 When you test all cases you can see the process of passed or not at the left bottom side on `PyCharm` like above capture image.
 
-> You have to make sure every test case is passed. If not plugin build also failed.
+> You have to make sure every test case is passed. If not, the plugin build-up will fail.
 
-## Checking uniqueness of name
+## How to validate the uniqueness of your package name and the display name
 ![04-check-unique-name](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/06-testing/04-check-unique-name.png)
 
 You can open `Terminal` from the context menu, `Open with > Terminal` on right click of folder `asciiart`.
@@ -247,9 +247,9 @@ Package "argoslabs.myplugin.asciiart" and Display name "ASCII Art" seems OK to u
 ```
 
 * `(py37)` prompt means that you are in `py37` virtual environment.
-* If there is an error message for this package name or display name please change it and check again until no error found.
+* If there is an error message for this package name or display name please change it. Repeat until no error has been found.
 
-> * This `alabs.ppm plugin unique` command may takes long more than 5 minutes because getting all modules from [official repository](https://pypi-official.argos-labs.com)
+> * This `alabs.ppm plugin unique` command may takes long time - often more than 5 minutes because getting all modules from [official repository](https://pypi-official.argos-labs.com)
 > * Note that this uniqueness is checking only with `official repository` not `private repositories`. **Your responsibility to check the uniqueness**.
 > * New version of `PyCharm` changed from `CMD.EXE` into `PowerShell`. So there may be no `(py37)` virtual environment prompt.
 
