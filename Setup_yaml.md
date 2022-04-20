@@ -1,6 +1,6 @@
 # Tags and Versions
 
-Tags are helpful for users to locate your plugin in the STU's toolbox. Versions must be managed by you so that the user can select the right version for their automation projectss.
+Tags are not only helpful for users to search and locate your plugin in the STU's toolbox. Versions must be managed by you so that the user can select the right version for their automation projectss. The Operating System specifications are important as the users can know whether or not your plugin is portable between multiple OS's like Windows and Linux.
 
 ![01-setup-yaml](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/07-setup_yaml/01-setup-yaml.png)
 
