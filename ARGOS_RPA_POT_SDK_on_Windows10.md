@@ -52,7 +52,7 @@ You need to change python package name from `argoslabs.demo.helloworld` to `argo
 
 When your plugin requires installation of any third party modules (dependent modules) from [pypi.org](https://pypi.org). This guild will show you how to do it.
 
-### [Main Coding at `__init__.py`](Main_Coding_Windows10.md)
+### [Coding main Python program at `__init__.py`](Main_Coding_Windows10.md)
 
 Plugin's main code is made from the source, `argoslabs/myplugin/asciiart/__init__.py`.
 
