@@ -53,5 +53,5 @@ You can `Create New Project`, but for simple example `Open` folder.
 
 You have already created a Virtual Environment at `C:\work\py37` and have installed `POT SDK`. We can just open `C:\work`.
 
-> You can change the working folder instead of `C:\work` however change the folder path in this example.
+> YES, you CAN change the working folder instead of `C:\work` --- however that will change all of the folder pathes in this document/examples.
 
