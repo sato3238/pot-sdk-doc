@@ -44,7 +44,7 @@ You must complete the IDE settings after preparation of Template.
 ## Coding for plugin
 This document will show you how to code from the scaffolding template.
 
-### [Set package name](Set_Package_name_Windows10.md)
+### [Setting the package name](Set_Package_name_Windows10.md)
 
 You need to change python package name from `argoslabs.demo.helloworld` to `argoslabs.myplugin.asciiart` for example.
 
