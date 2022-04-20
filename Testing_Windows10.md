@@ -1,4 +1,4 @@
-# Testing your code and validating your file and plugin names for uniqueness
+# Testing your code and validating the package/display names for uniqueness
 
 Plugin's test code exists at the source code file named `argoslabs/myplugin/asciiart/tests/test_me.py`.
 There are good ways to test with several testing frameworks.
