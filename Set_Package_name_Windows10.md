@@ -48,6 +48,6 @@ In this example we will change it to `asciiart`.
 
 You can see `argoslabs/myplugin/asciiart` folder structure at Project pane.
 
-> Instead of changing folder name, why use `refactor > rename` functionality is that all reference including comments are automatically changed.
+> Instead of changing the folder name manually, you CAN use `refactor > rename` functionality to change all referenced including comments automatically.
 
 Whenever you build a new plugin you can start with this template.
