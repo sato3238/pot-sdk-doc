@@ -1,23 +1,23 @@
 # How to upgrade plugin
 
 There are many reasons to upgrade plugin:
-* `Bug`: Mal-functional operation
-* `Obsolete dependent module`: Not operation for out of date dependent module
-* `Need more function`: Add/Modify input parameters and functions
-* and more than tens of hundreds reason to upgrade plugin
+* `Bug fix`: Mal-functional operation
+* `Obsolete dependent module(s)`: Not operation for out of date dependent module
+* `Need more function or enhancement`: Add/Modify input parameters and functions
+* and many more reasons to upgrade plugin
 
-Next method is not for the every case but usually we follow next process.
+This section will explain one exampole of the plugin update procedure. Maybe this is not for all of the cases but usually we follow next process.
 
-## Find the problem
+## Finding (isolating) the problem
 
-When some abnomal situation happen Finding the exact problem is the most important thing.
+When some abnormal situation happens finding the exact problem clearly is the most important thing.
 
-### Reproduce the problem
+### Reproducing the problem
 
-Most of error reports came from others which use your plugin. 
-In this case first thing is to reproduce that problem. 
-When you try to reproduce you have to know or gather at least as much as possible:
-* OS Release: Windows 10 SP 2 (build xxxxx)
+Most of error reports come from various users who use your plugin who runs it in various environment.
+In this case first thing to do is to reproduce that problem at your environment. 
+When you try to reproduce the problem, you have to know or gather as much information as possible:
+* OS version and release: Windows 10 SP 2 (build xxxxx)
 * Main Language: English, Korean, Japnanese, Chinese and so on
 * Environmental Variables: %UserProfile%, %Temp%, ...
 * ...
@@ -30,7 +30,7 @@ However sometimes you have to maintain the code by others.
 In this case the first thing is that run the `tests\test_me.py` unittest code.
 Usually these test cases contains all good and bad functionalities you can see the intention of the original code.
 
-## Coding
+## Coding to fix the bug
 
 You can modity the main `__init__.py` file.
 
@@ -61,11 +61,11 @@ Usually even the new added case is passed some of the rest cases would not be pa
 We call this `regression testing`.
 So let's create test cases not just success but also failure.
 
-## Config `setup.yaml`
+## Rewrite `setup.yaml` for version control
 
 You have to do `version up` at `setup.yaml` file.
 
-## Building
+## Building the updated plugin
 
 Building process is the same with the command `build.bat`.
 
