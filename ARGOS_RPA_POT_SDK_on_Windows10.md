@@ -87,5 +87,5 @@ Once you build your own plugin, it's time to make a bot with `STU` for testing. 
 
 Now your plugin is registered at private repository so you can make use of this plugin. This guide shows how to make a bot using your plugin.
 
-### [How to upgrade your plugin](How_to_Upgrade_plugin.md)
+### [How to upgrade/remove(EOL) your plugin](How_to_Upgrade_plugin.md)
 Because plugin is a normal software it need to fix or upgrade if needed. This guide shows how to upgrade your plugin.
