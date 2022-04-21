@@ -1,12 +1,12 @@
-# Build icon and plugin
+# Creating icon and buidling the plugin
 
-## Build Icon
+## Creating icon
 
-You can build an icon for this plugin from any image.
+This section covers the creation of icon of your plugin that will be the representative entity in STU's toolbox. You can create an icon for this plugin from any image.
 
 ![01-search-icons](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/01-search-icons.png)
 
-Let's search `ascii art icon` or `figlet icon` from google image search.
+Icon should be iconic to the functions of your plugin. Let's search `ascii art icon` or `figlet icon` from google image search.
 Any icon candidate is OK.
 
 > Be careful with `Copyright`
@@ -35,9 +35,9 @@ This icon.yaml says reading image from `con-my.png` and tries to shrink to 30 pi
 
 You can see the `icon-my.png` image on left pane and result `icon.png` image on right pane.
 
-## Build plugin
+## Building your plugin
 
-Now it is time to build this plugin after codeing, testing and making icon.
+Finally, it is time to build up your new plugin after coding, testing and making the icon.
 
 ![03-build-bat](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/03-build-bat.png)
 
@@ -107,17 +107,17 @@ Here is the explanation of this `build.bat`:
 * `alabs.ppm --venv clear-all` : Clear the folder `%HOMEPROFILE%\py.win32`
 * `alabs.ppm --venv %VB% test` : Install dependent module[s] and testing the `test_me.py`
 * `alabs.ppm --venv %VB% build` : Making one [wheel](https://pypi.org/project/wheel/0.22.0/) Python module file. Similar to `python setup.py bdist_wheel` command
-* `alabs.ppm --venv %VB% upload` : You registered your private repository at [supervisor's private plugin menu](https://rpa.argos-labs.com/#/plugin/private-plugin). After successful building `wheel` file you can upload this plugin Python module and use at `STU`.
+* `alabs.ppm --venv %VB% upload` : You registered your private repository at [supervisor's private plugin menu](https://rpa.argos-labs.com/#/plugin/private-plugin). After successful building `wheel` file you can upload this plugin Python module and use with `STU`.
 
 > "`alabs.ppm %VB% submit` " command is commented out because of under preparation. This is a request to publish to [Official Repository](https://pypi-official.argos-labs.com).
 
 ![04-userid-password-sv](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/04-userid-password-sv.png)
 
-When running `build.bat` two prompts happen:
+When running `build.bat` two prompts will appear:
 * `upload command need user id for ARGOS RPA, User ID? ` - Enter ***Supervisor's User ID***
 * `upload command need user password for ARGOS RPA, User Password? ` - Enter ***Supervisor's User Password***
 
-> If you already have one or more private repositories then re-order to first position. This is because when plugin is being built it tries to upload to the ***FIRST private repository***.
+> If you already have one or more private repositories then re-order and move up your target repository to the first position on Supervisor's Private repository screen. This is because the POT SDK will upload the new plugin to the ***FIRST private repository*** on Supervisor's Private screen.
 
 
 ![05-build-success](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/05-build-success.png)
@@ -135,7 +135,7 @@ All process is done by one command `build.bat`. If you cannot see this result yo
 ![09-baretail](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/09-baretail.png)
 
 
-## Check plugin at private repository
+## Confirming successful upload of the new plugin to private repository
 
 ![06-check-upload](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/09-build/06-check-upload.png)
 
