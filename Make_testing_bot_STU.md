@@ -7,11 +7,11 @@ To make a test bot with the plugin which you created you need to install `STU` a
 
 ![01-login-STU](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/10-make_bot/01-login-STU.png)
 
-If you have`STU` open, please close it and restart. Please start agein then above `login` page shows up. Please enter **your** `Supervisor` account to sign in.
+If your `STU` is already open, please close it and restart. STU sign-in credentials are the same as your Supervisor account credentials.
 
 ![02-private-plugin](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/10-make_bot/02-private-plugin.png)
 
-**Please be patient** Just after signing in `STU` it starts detecting plugins from [official repository](https://pypi-official.argos-labs.com) and private repositories registered at [supervisor's private plugin menu](https://rpa.argos-labs.com/#/plugin/private-plugin). If it's first time to run the `STU` then it may take more than a few minutes. And afterwards this checking time will be reduced to a few seconds because of cache. 
+**Please be patient when you have a new plugin** - Everytime STU starts he will try to see if there is any change in your toolbox such as addition of a new plugin --- it checks the data from both [official repository](https://pypi-official.argos-labs.com) and private repositories registered at [supervisor's private plugin menu](https://rpa.argos-labs.com/#/plugin/private-plugin). If it's first time to run the `STU` then it may take more than a few minutes. And afterwards this checking time will be reduced to a few seconds because the toolbox data is cached. 
 
 You can find your plugin `ASCII Art` at the last of `Operations`, `Plugins-private` group.
 
@@ -55,6 +55,6 @@ To run this bot, `Test run` from `Run` menu or press `F5`.
 
 ![07-result](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/10-make_bot/07-result.png)
 
-At the first time to run this `bot` it takes a few more seconds to build `Virtual Environment` for this bot. 
+**IMPORTANT** Preparation of `Virtual Environment`can take some time depending on what Python modules your bot will be referencing. But please do not worry. This is just for the very first time. Second time on, the local `Virtual Environment` can be used without re-construction. 
 
 You can see the result at the `Notepad` app as above example.
