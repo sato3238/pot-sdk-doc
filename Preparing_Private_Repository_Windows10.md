@@ -1,10 +1,12 @@
 # Preparing private repository
 
-After building a plugin you need to upload this plugin to your own Python private repository. This guide shows how to install private repository and configuration at Supervisor.
+After building a plugin you must upload the plugin to your private (test) repository for test with STU and PAM. You can then ask ARGOS LABS to publish it to the entire ARGOS Low-code community or to publish it to a designated repository for their private usage.
 
-## Install Private repository using pypicloud
+This section will guild you to set up your Python private repository. After setting it up you can coonfigure it at Supervisor so that your STU will see you plugin there fow showing at his toolbox.
 
-We are using normal Python Repository. Previously we recommend [pypiserver](https://pypi.org/project/pypiserver/) for this repository but now instead we recommend [pypiserver](https://pypicloud.readthedocs.io/en/latest/topics/getting_started.html#installation) for the following advantages:
+## Installation of private repository using pypicloud
+
+We are using normal Python repository scheme. We will simply use [pypicloud](https://pypicloud.readthedocs.io/en/latest/topics/getting_started.html#installation) for the following advantages:
 
 * Web based user interface to manage plugins and users
 * Simple local installation
