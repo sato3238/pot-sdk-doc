@@ -1,4 +1,4 @@
-# How to upgrade plugin
+# How to upgrade plugin (how to delete (end of life) your plugin)
 
 There are many reasons to upgrade plugin:
 * `Bug fix`: Mal-functional operation
@@ -76,3 +76,12 @@ If you have reproduced failure bot case you have to test that bot is working wel
 ![01-plugin-version-STU](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/11-upgrade-plugin/01-plugin-version-STU.png)
 
 Once you update your plugin you can see the versions at STU like above image. You can upgrade target version and `test run` the bot.
+
+# How to delete (EOL) your plugin
+
+ARGOS Low-code platform has a mechanism to collect usage data of all plugins. When your plugin (or a certain version of your plugin) has no usage record in the last 180 days, you can delete your plugin by following the procedure below.
+
+1. Send a request for removal email to plugin_management@argos-labs.com
+2. Receive usage stats and approval/disapproval for deletion
+3. If approved, confirm removal by another email.
+4. Your plugin (or a certain version(s) of the pluign) will be removed from service.
