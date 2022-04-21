@@ -9,7 +9,7 @@ Before your start, let's prepare your POT SDK environment. There are 3 pieces of
 - The POT SDK
 - IDE (PyCharm)
 
-Oh, btw, we are asuuming you already have signed up with [ARGOS Supervisor account](https://rpa.argos-labs.com/), downloaded the latest version of STU and PAM from the [ARGOS LABS website](https://www.argos-labs.com/#download), and installed them successfully.
+Oh, btw, we are assuming you already have signed up with [ARGOS Supervisor account](https://rpa.argos-labs.com/), downloaded the latest version of STU and PAM from the [ARGOS LABS website](https://www.argos-labs.com/#download), and installed them successfully.
 
 ### [Installing Python Interpreter](Install_Python_Interpreter_Windows10.md)
 
