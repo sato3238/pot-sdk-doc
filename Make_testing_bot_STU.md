@@ -1,17 +1,17 @@
-# Make a testing bot at STU
+# Build a test bot using your new plugin with STU
 
-Now your plugin is registered at private repository so you can make use of this plugin. This guide shows how to make a bot using your plugin.
+Congratulations. Now your plugin is registered (uploaded) at the private repository so you can make use of it in the ARGOS Low-code platform. This section shows how to build a test bot using your plugin.
 
-To make a testing bot with the plugin which you created you need to install `STU` and `PAM` and register at `Supervisor`. 
+To make a test bot with the plugin which you created you need to install `STU` and `PAM` and register (sign up) at `Supervisor`. 
 
 
 ![01-login-STU](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/10-make_bot/01-login-STU.png)
 
-If you start `STU` then above `login` page shows up. Please enter **your** `Supervisor` account to sign in.
+If you have`STU` open, please close it and restart. Please start agein then above `login` page shows up. Please enter **your** `Supervisor` account to sign in.
 
 ![02-private-plugin](https://raw.githubusercontent.com/Jerry-Chae/pot-sdk-doc/main/Captures/03-Make_Plugin_PyCharm/10-make_bot/02-private-plugin.png)
 
-Just after signing in `STU` it starts detecting plugins from [official repository](https://pypi-official.argos-labs.com) and private repositories registered at [supervisor's private plugin menu](https://rpa.argos-labs.com/#/plugin/private-plugin). If it's first time to run the `STU` then it may take more than a few minutes. And afterwards this checking time will be reduced to a few seconds because of cache. 
+**Please be patient** Just after signing in `STU` it starts detecting plugins from [official repository](https://pypi-official.argos-labs.com) and private repositories registered at [supervisor's private plugin menu](https://rpa.argos-labs.com/#/plugin/private-plugin). If it's first time to run the `STU` then it may take more than a few minutes. And afterwards this checking time will be reduced to a few seconds because of cache. 
 
 You can find your plugin `ASCII Art` at the last of `Operations`, `Plugins-private` group.
 
